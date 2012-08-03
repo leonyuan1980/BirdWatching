@@ -38,6 +38,42 @@
     return YES;
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    int length1 = textField.text.length - range.length + string.length;
+    int length2 = 0;
+    if(textField == self.birdNameInput) {
+        length2 = self.locationInput.text.length;
+    }
+    else if(textField == self.locationInput) {
+        length2 = self.birdNameInput.text.length;
+    }
+    
+  //  int length = textField.text.length;
+    if((length1 >0)&&(length2 >0)){
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    }
+    return YES;
+}
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField {
+    /*
+    int length = 0;
+    if(textField == self.birdNameInput) {
+        length = self.locationInput.text.length;
+    }
+    else if(textField == self.locationInput) {
+        length = self.birdNameInput.text.length;
+    }
+    if(length == 0) {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    }
+    */
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,6 +83,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 
 - (void)viewDidUnload

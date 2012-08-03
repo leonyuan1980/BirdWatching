@@ -77,12 +77,12 @@
             </objects>
             <point key="canvasLocation" x="509" y="466"/>
         </scene>
-        <!--Birds Detail View Controller-->
+        <!--Birds Detail View Controller - Bird Detail-->
         <scene sceneID="hM6-w3-Rl6">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9B-pw-Xb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="AdS-bC-93w" customClass="BirdsDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="l0w-4L-N6T">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="l0w-4L-N6T">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,7 +172,7 @@
                             <outlet property="delegate" destination="AdS-bC-93w" id="1mO-cR-UwF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="YLc-32-qKI"/>
+                    <navigationItem key="navigationItem" title="Bird Detail" id="YLc-32-qKI"/>
                     <connections>
                         <outlet property="birdNameLabel" destination="Tx9-uS-I1n" id="tgp-Ya-VEC"/>
                         <outlet property="dateLabel" destination="Ltf-ED-tOm" id="fai-Vv-BtN"/>
@@ -182,12 +182,12 @@
             </objects>
             <point key="canvasLocation" x="978" y="466"/>
         </scene>
-        <!--Add Sighting View Controller-->
+        <!--Add Sighting View Controller - Add Sighting-->
         <scene sceneID="92P-jZ-rq5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJL-Og-R6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="PgR-s5-plS" customClass="AddSightingViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vNf-iS-YOp">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vNf-iS-YOp">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -256,7 +256,7 @@
                             <outlet property="delegate" destination="PgR-s5-plS" id="dJs-34-tw1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uOY-aT-qXV">
+                    <navigationItem key="navigationItem" title="Add Sighting" id="uOY-aT-qXV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cvW-MB-Sl0">
                             <connections>
                                 <action selector="cancel:" destination="PgR-s5-plS" id="W1y-RK-bgX"/>
